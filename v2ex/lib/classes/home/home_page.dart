@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:v2ex/widgets/ui_navigation_bar.dart';
-import '../../common/color_ext.dart';
+import '../../widgets/base_scaffold.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -12,12 +11,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: C.background,
-      appBar: UINavigationBar(
-        title: '首页',
-        isShowDefaultLeftItem: false,
-      ),
+    return const BaseScaffold(
+      title: '首页',
+      isShowDefaultLeftItem: false,
+      body: Text('data'),
     );
   }
 }

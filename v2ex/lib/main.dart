@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         // 全局修改去除点击水波纹效果
-        brightness: Brightness.light,
+        // brightness: Brightness.light,
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent
       ),
-      initialRoute: '/tabbar',
+      initialRoute: '/',
       onGenerateRoute: onGenerateRoute,
       // localizationsDelegates: const [
       //   // 本地化的代理类

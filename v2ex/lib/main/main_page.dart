@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../classes/home/home_page.dart';
-import '../classes/profile/profile_page.dart';
+import '../classes/profile/pages/profile_page.dart';
 import '../common/color_ext.dart';
 
 class MainPage extends StatefulWidget {
