@@ -19,7 +19,7 @@ class _ProfilePageState extends State<ProfilePage> {
       isShowDefaultLeftItem: false,
       body: Center(
         child: TextButton(
-          child: Text('${localization.languageSetting}${localization.test}', style: TextStyle(color: C.c666666),),
+          child: Text(localization.languageSetting, style: TextStyle(color: C.c666666),),
           onPressed: () { 
             Navigator.pushNamed(context, '/language');
           },

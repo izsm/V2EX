@@ -25,7 +25,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "home" : MessageLookupByLibrary.simpleMessage("Home"),
     "languageSetting" : MessageLookupByLibrary.simpleMessage("Setting Language"),
     "profile" : MessageLookupByLibrary.simpleMessage("Profile"),
-    "test" : MessageLookupByLibrary.simpleMessage("I\'m the test data"),
     "title" : MessageLookupByLibrary.simpleMessage("V2EX")
   };
 }

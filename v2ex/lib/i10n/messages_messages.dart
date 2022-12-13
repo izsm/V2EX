@@ -25,7 +25,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "home" : MessageLookupByLibrary.simpleMessage("首页"),
     "languageSetting" : MessageLookupByLibrary.simpleMessage("设置语言"),
     "profile" : MessageLookupByLibrary.simpleMessage("我的"),
-    "test" : MessageLookupByLibrary.simpleMessage("我是测试数据"),
     "title" : MessageLookupByLibrary.simpleMessage("V2EX")
   };
 }

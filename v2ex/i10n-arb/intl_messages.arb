@@ -1,13 +1,7 @@
 {
-  "@@last_modified": "2022-12-13T09:51:26.221363",
+  "@@last_modified": "2022-12-13T10:19:15.784246",
   "title": "V2EX",
   "@title": {
-    "type": "text",
-    "placeholders_order": [],
-    "placeholders": {}
-  },
-  "test": "我是测试数据",
-  "@test": {
     "type": "text",
     "placeholders_order": [],
     "placeholders": {}

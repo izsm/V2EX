@@ -23,13 +23,6 @@ class VLocalizations {
     );
   }
 
-  String get test {
-    return Intl.message(
-      "我是测试数据",
-      name: 'test'
-    );
-  }
-
   /* 首页 */
   String get home {
     return Intl.message(

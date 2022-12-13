@@ -6,12 +6,6 @@
     "placeholders_order": [],
     "placeholders": {}
   },
-  "test": "I'm the test data",
-  "@test": {
-    "type": "text",
-    "placeholders_order": [],
-    "placeholders": {}
-  },
   "home": "Home",
   "@home": {
     "type": "text",
