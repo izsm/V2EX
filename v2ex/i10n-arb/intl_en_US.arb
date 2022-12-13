@@ -1,0 +1,39 @@
+{
+  "@@last_modified": "2022-12-13T08:57:51.078517",
+  "title": "V2EX",
+  "@title": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "test": "I'm the test data",
+  "@test": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "home": "Home",
+  "@home": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "profile": "Profile",
+  "@profile": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "languageSetting": "Setting Language",
+  "@languageSetting": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  }
+}

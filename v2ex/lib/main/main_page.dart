@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:v2ex/i10n/localization_intl.dart';
 import '../classes/home/home_page.dart';
 import '../classes/profile/pages/profile_page.dart';
 import '../common/color_ext.dart';
@@ -13,9 +14,9 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
 
   int _index = 0;
-  final List<Widget> _pages = const [
-    HomePage(),
-    ProfilePage()
+  final List<Widget> _pages = [
+    const HomePage(),
+    const ProfilePage()
   ];
 
   @override
@@ -25,12 +26,13 @@ class _MainPageState extends State<MainPage> {
         index: _index,
         children: _pages,
       ),
-      bottomNavigationBar: _bottomNavigationBar(),
+      bottomNavigationBar: _bottomNavigationBar()
     );
   }
 
   // 底部Tabbar
   Widget _bottomNavigationBar() {
+    VLocalizations localization = VLocalizations.of(context);
     return BottomNavigationBar(
         elevation: 1,
         currentIndex: _index,
@@ -38,14 +40,14 @@ class _MainPageState extends State<MainPage> {
         unselectedItemColor: Colors.grey,
         selectedFontSize: 10,
         unselectedFontSize: 10,
-        items: const [
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: '首页'
+            icon: const Icon(Icons.home),
+            label: localization.home
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.people),
-            label: '我的'
+            icon: const Icon(Icons.people),
+            label: localization.profile
           )
         ],
         onTap: (value) {

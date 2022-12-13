@@ -38,9 +38,9 @@ class UINavigationBar extends StatefulWidget implements PreferredSizeWidget {
 class _UINavigationBarState extends State<UINavigationBar> {
 
   Widget? title;
+
   @override
-  void initState() {
-    super.initState();
+  Widget build(BuildContext context) {
     if (widget.title != null) {
       title = Text(
         widget.title!, 
@@ -50,10 +50,7 @@ class _UINavigationBarState extends State<UINavigationBar> {
     if (widget.titleWidget != null) {
       title = widget.titleWidget;
     }
-  }
-
-  @override
-  Widget build(BuildContext context) {
+    
     return AppBar(
       title: title,
       centerTitle: widget.centerTitle,

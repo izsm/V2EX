@@ -1,0 +1,39 @@
+{
+  "@@last_modified": "2022-12-13T09:51:26.221363",
+  "title": "V2EX",
+  "@title": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "test": "我是测试数据",
+  "@test": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "home": "首页",
+  "@home": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "profile": "我的",
+  "@profile": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "languageSetting": "设置语言",
+  "@languageSetting": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "confirm": "确定",
+  "@confirm": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  }
+}

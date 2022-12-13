@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:v2ex/i10n/localization_intl.dart';
 import 'package:v2ex/widgets/base_scaffold.dart';
 import '../../../common/color_ext.dart';
 
@@ -12,12 +13,13 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
+    VLocalizations localization = VLocalizations.of(context);
     return BaseScaffold(
-      title: '我的',
+      title: localization.profile,
       isShowDefaultLeftItem: false,
       body: Center(
         child: TextButton(
-          child: Text('语言', style: TextStyle(color: C.c666666),),
+          child: Text('${localization.languageSetting}${localization.test}', style: TextStyle(color: C.c666666),),
           onPressed: () { 
             Navigator.pushNamed(context, '/language');
           },
