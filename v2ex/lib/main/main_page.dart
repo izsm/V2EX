@@ -22,11 +22,13 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: IndexedStack(
-        index: _index,
-        children: _pages,
-      ),
-      bottomNavigationBar: _bottomNavigationBar()
+      // body: IndexedStack(
+      //   index: _index,
+      //   children: _pages,
+      // ),
+      // bottomNavigationBar: _bottomNavigationBar()
+      body: _pages[_index],
+      bottomNavigationBar: _bottomNavigationBar(),
     );
   }
 
@@ -34,10 +36,11 @@ class _MainPageState extends State<MainPage> {
   Widget _bottomNavigationBar() {
     VLocalizations localization = VLocalizations.of(context);
     return BottomNavigationBar(
-        elevation: 1,
+      backgroundColor: C.bar(context),
+        elevation: 0.5,
         currentIndex: _index,
-        selectedItemColor: C.c222222,
-        unselectedItemColor: Colors.grey,
+        selectedItemColor: isDarkMode(context) ? C.c999999 : C.c222222,
+        unselectedItemColor: isDarkMode(context) ? C.c666666 : C.c999999,
         selectedFontSize: 10,
         unselectedFontSize: 10,
         items: [

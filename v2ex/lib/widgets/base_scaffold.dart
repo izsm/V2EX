@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:v2ex/common/color_ext.dart';
 import 'ui_navigation_bar.dart';
-import '../common/color_ext.dart';
 
 class BaseScaffold extends StatefulWidget {
 
@@ -10,6 +10,8 @@ class BaseScaffold extends StatefulWidget {
   final List<Widget>? rightItems;
   final Widget? body;
   final bool isShowDefaultLeftItem;
+  // content color
+  final Color? backgroundColor;
 
   const BaseScaffold({
     Key? key, 
@@ -19,6 +21,7 @@ class BaseScaffold extends StatefulWidget {
     this.rightItems,
     this.body,
     this.isShowDefaultLeftItem = true,
+    this.backgroundColor
     }) : super(key: key);
 
   @override
@@ -29,13 +32,14 @@ class _BaseScaffoldState extends State<BaseScaffold> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: C.background,
+      backgroundColor: widget.backgroundColor ?? C.background(context),
       appBar: UINavigationBar(
         title: widget.title,
         titleWidget: widget.titleWidget,
         leftItem: widget.leftItem,
         rightItems: widget.rightItems,
         isShowDefaultLeftItem: widget.isShowDefaultLeftItem,
+        backgroundColor: widget.backgroundColor,
       ),
       body: widget.body,
     );

@@ -6,8 +6,8 @@ class UINavigationBar extends StatefulWidget implements PreferredSizeWidget {
   final String? title;
   final Widget? titleWidget;
   final bool centerTitle;
+  final Color? backgroundColor;
   final double elevation;
-  final Color backgroundColor;
   final bool isShowDefaultLeftItem;
   final Widget? leftItem;
   final List<Widget>? rightItems;
@@ -18,8 +18,8 @@ class UINavigationBar extends StatefulWidget implements PreferredSizeWidget {
     this.title, 
     this.titleWidget,
     this.centerTitle = true,
+    this.backgroundColor,
     this.elevation = 0.5,
-    this.backgroundColor = Colors.white,
     this.isShowDefaultLeftItem = true,
     this.leftItem,
     this.rightItems,
@@ -44,7 +44,7 @@ class _UINavigationBarState extends State<UINavigationBar> {
     if (widget.title != null) {
       title = Text(
         widget.title!, 
-        style: TextStyle(color: C.c222222, fontSize: 16)
+        style: TextStyle(color: isDarkMode(context) ? C.c999999 : C.c222222, fontSize: 16)
       );
     }
     if (widget.titleWidget != null) {
@@ -55,11 +55,12 @@ class _UINavigationBarState extends State<UINavigationBar> {
       title: title,
       centerTitle: widget.centerTitle,
       elevation: widget.elevation,
-      backgroundColor: widget.backgroundColor,
       leading: widget.isShowDefaultLeftItem ? widget.leftItem ?? defaultBack() : null,
       actions: widget.rightItems,
       bottom: widget.tabs,
       toolbarHeight: 44,
+      shadowColor: C.line,
+      backgroundColor: widget.backgroundColor ?? C.bar(context),
     );
   }
 
@@ -67,7 +68,7 @@ class _UINavigationBarState extends State<UINavigationBar> {
     return GestureDetector(
       child: Icon(
         Icons.arrow_back_ios,
-        color: C.c222222,
+        color: isDarkMode(context) ? C.c999999 : C.c222222,
       ),
       onTap: () {
         Navigator.pop(context);
