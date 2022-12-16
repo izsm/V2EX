@@ -61,14 +61,12 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
               // 全局修改去除点击水波纹效果
               splashColor: Colors.transparent,
               highlightColor: Colors.transparent,
-              // brightness: Brightness.light,
             ),
-            // darkTheme: ThemeData(
-            //   // 全局修改去除点击水波纹效果
-            //   splashColor: Colors.transparent,
-            //   highlightColor: Colors.transparent,
-            //   // brightness: Brightness.dark,
-            // ),
+            darkTheme: ThemeData(
+              // 全局修改去除点击水波纹效果
+              splashColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+            ),
             themeMode: ThemeMode.system,
             initialRoute: '/',
             onGenerateRoute: onGenerateRoute,

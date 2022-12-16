@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../common/color_ext.dart';
+import 'package:v2ex/common/adapt.dart';
 
 class UINavigationBar extends StatefulWidget implements PreferredSizeWidget {
 
@@ -44,7 +45,7 @@ class _UINavigationBarState extends State<UINavigationBar> {
     if (widget.title != null) {
       title = Text(
         widget.title!, 
-        style: TextStyle(color: isDarkMode(context) ? C.c999999 : C.c222222, fontSize: 16)
+        style: TextStyle(color: C.title(context), fontSize: 16.fit, fontWeight: FontWeight.bold)
       );
     }
     if (widget.titleWidget != null) {
@@ -59,7 +60,7 @@ class _UINavigationBarState extends State<UINavigationBar> {
       actions: widget.rightItems,
       bottom: widget.tabs,
       toolbarHeight: 44,
-      shadowColor: C.line,
+      shadowColor: C.line(context),
       backgroundColor: widget.backgroundColor ?? C.bar(context),
     );
   }

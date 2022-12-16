@@ -9,7 +9,9 @@ extension C on Color {
   // 黑色8
   static Color c999999 = '#999999'.color;
   // 线
-  static Color line = '#dfe0e0'.color;
+  static Color line(BuildContext context) {
+    return isDarkMode(context) ? '555555'.color : '#dfe0e0'.color;
+  }
   // 导航栏、tabbar
   static Color bar(BuildContext context) {
     return isDarkMode(context) ? '1A222C'.color : Colors.white;
@@ -22,6 +24,12 @@ extension C on Color {
   static Color list(BuildContext context) {
     return isDarkMode(context) ? '1A222C'.color : Colors.white;
   }
+  // 列表等
+  static Color title(BuildContext context) {
+    return isDarkMode(context) ? '#999999'.color : '#222222'.color;
+  }
+
+
 
   Color alpha(double value) {
     return withOpacity(value);

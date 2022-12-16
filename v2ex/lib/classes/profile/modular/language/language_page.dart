@@ -19,9 +19,11 @@ class _LanguagePageState extends State<LanguagePage> {
   late Localized _localeModel;
   late VLocalizations _localization;
   List<Locale> _supportedLocales = [];
-
+  late BuildContext? _context;
+  
   @override
   Widget build(BuildContext context) {
+    _context = context;
     _localeModel = Provider.of<Localized>(context);
     if (_selectLocale.isEmpty) {
       _selectLocale = _localeModel.locale;
@@ -41,7 +43,7 @@ class _LanguagePageState extends State<LanguagePage> {
         padding: const EdgeInsets.only(right: 15),
         child: _selectLocale == _localeModel.locale ? null : Center(
           child: GestureDetector(
-            child: Text(_localization.confirm, style: TextStyle(color: C.c222222, fontSize: 15)),
+            child: Text(_localization.confirm, style: TextStyle(color: C.title(context), fontSize: 15)),
             onTap: () {
               _localeModel.change = _selectLocale;
             },
@@ -58,7 +60,7 @@ class _LanguagePageState extends State<LanguagePage> {
       itemBuilder: ((context, index) {
         return GestureDetector(
           child: Container(
-            color: Colors.white,
+            color: C.list(_context!),
               padding: const EdgeInsets.only(left: 15),
               child: Column(
               children: [
@@ -68,17 +70,17 @@ class _LanguagePageState extends State<LanguagePage> {
                       Expanded(
                         child: Text(
                           _localeModel.dispalyName(_supportedLocales[index].toString()), 
-                          style: TextStyle(color: C.c222222, fontSize: 15)
+                          style: TextStyle(color: C.title(context), fontSize: 15)
                         )
                       ),
                       Padding(
                         padding: const EdgeInsets.only(right: 15), 
-                        child: _selectLocale == _supportedLocales[index].toString() ? Icon(Icons.check, size: 20, color: C.c222222) : null
+                        child: _selectLocale == _supportedLocales[index].toString() ? Icon(Icons.check, size: 20, color: C.title(context)) : null
                       )
                     ],
                   ),
                 ),
-                Divider(color: C.line, height: 0.5,)
+                Divider(color: C.line(context), height: 0.5)
               ]
             )
           ),
