@@ -21,10 +21,19 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function> {
+    "accountBalance" : MessageLookupByLibrary.simpleMessage("账户余额"),
+    "cache" : MessageLookupByLibrary.simpleMessage("缓存"),
+    "collection" : MessageLookupByLibrary.simpleMessage("收藏"),
     "confirm" : MessageLookupByLibrary.simpleMessage("确定"),
+    "exitLogin" : MessageLookupByLibrary.simpleMessage("退出登陆"),
+    "follow" : MessageLookupByLibrary.simpleMessage("关注"),
     "home" : MessageLookupByLibrary.simpleMessage("首页"),
     "languageSetting" : MessageLookupByLibrary.simpleMessage("设置语言"),
+    "post" : MessageLookupByLibrary.simpleMessage("发帖"),
     "profile" : MessageLookupByLibrary.simpleMessage("我的"),
+    "recentBrowsing" : MessageLookupByLibrary.simpleMessage("最近浏览"),
+    "setting" : MessageLookupByLibrary.simpleMessage("设置"),
+    "theme" : MessageLookupByLibrary.simpleMessage("主题"),
     "title" : MessageLookupByLibrary.simpleMessage("V2EX")
   };
 }

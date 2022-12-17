@@ -24,12 +24,10 @@ extension C on Color {
   static Color list(BuildContext context) {
     return isDarkMode(context) ? '1A222C'.color : Colors.white;
   }
-  // 列表等
+  
   static Color title(BuildContext context) {
     return isDarkMode(context) ? '#999999'.color : '#222222'.color;
   }
-
-
 
   Color alpha(double value) {
     return withOpacity(value);

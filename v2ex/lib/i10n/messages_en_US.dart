@@ -21,10 +21,19 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function> {
+    "accountBalance" : MessageLookupByLibrary.simpleMessage("Account Balance"),
+    "cache" : MessageLookupByLibrary.simpleMessage("Cache"),
+    "collection" : MessageLookupByLibrary.simpleMessage("Collection"),
     "confirm" : MessageLookupByLibrary.simpleMessage("Confirm"),
+    "exitLogin" : MessageLookupByLibrary.simpleMessage("Exit Login"),
+    "follow" : MessageLookupByLibrary.simpleMessage("Follow"),
     "home" : MessageLookupByLibrary.simpleMessage("Home"),
     "languageSetting" : MessageLookupByLibrary.simpleMessage("Setting Language"),
+    "post" : MessageLookupByLibrary.simpleMessage("Post"),
     "profile" : MessageLookupByLibrary.simpleMessage("Profile"),
+    "recentBrowsing" : MessageLookupByLibrary.simpleMessage("Recent Browsing"),
+    "setting" : MessageLookupByLibrary.simpleMessage("Setting"),
+    "theme" : MessageLookupByLibrary.simpleMessage("Theme"),
     "title" : MessageLookupByLibrary.simpleMessage("V2EX")
   };
 }

@@ -22,13 +22,13 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // body: IndexedStack(
-      //   index: _index,
-      //   children: _pages,
-      // ),
-      // bottomNavigationBar: _bottomNavigationBar()
-      body: _pages[_index],
-      bottomNavigationBar: _bottomNavigationBar(),
+      body: IndexedStack(
+        index: _index,
+        children: _pages,
+      ),
+      bottomNavigationBar: _bottomNavigationBar()
+      // body: _pages[_index],
+      // bottomNavigationBar: _bottomNavigationBar(),
     );
   }
 

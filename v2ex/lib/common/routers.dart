@@ -1,5 +1,6 @@
 // Flutter widgets implementing Material Design
 import 'package:flutter/material.dart';
+import 'package:v2ex/classes/profile/modular/setting/setting_page.dart';
 
 // Flutter widgets implementing the current iOS design language
 // import 'package:flutter/cupertino.dart';
@@ -9,7 +10,8 @@ import '../classes/profile/modular/language/language_page.dart';
 // 1、配置路由
 final Map routes = {
   '/': (context) => const MainPage(),
-  '/language': (context) => const LanguagePage()
+  '/language': (context) => const LanguagePage(),
+  '/setting': (context) => const SettingPage()
 };
 
 // 2、配置onGenerateRoute 固定写法 这个方法也相当于一个中间件，这里可以做权限判断

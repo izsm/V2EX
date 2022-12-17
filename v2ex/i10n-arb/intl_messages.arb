@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2022-12-13T10:19:15.784246",
+  "@@last_modified": "2022-12-16T17:14:38.657897",
   "title": "V2EX",
   "@title": {
     "type": "text",
@@ -18,6 +18,48 @@
     "placeholders_order": [],
     "placeholders": {}
   },
+  "setting": "设置",
+  "@setting": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "accountBalance": "账户余额",
+  "@accountBalance": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "post": "发帖",
+  "@post": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "theme": "主题",
+  "@theme": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "collection": "收藏",
+  "@collection": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "follow": "关注",
+  "@follow": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "recentBrowsing": "最近浏览",
+  "@recentBrowsing": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
   "languageSetting": "设置语言",
   "@languageSetting": {
     "type": "text",
@@ -26,6 +68,18 @@
   },
   "confirm": "确定",
   "@confirm": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "cache": "缓存",
+  "@cache": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "exitLogin": "退出登陆",
+  "@exitLogin": {
     "type": "text",
     "placeholders_order": [],
     "placeholders": {}

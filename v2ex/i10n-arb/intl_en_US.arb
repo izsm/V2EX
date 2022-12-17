@@ -18,6 +18,48 @@
     "placeholders_order": [],
     "placeholders": {}
   },
+  "setting": "Setting",
+  "@setting": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "accountBalance": "Account Balance",
+  "@accountBalance": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "post": "Post",
+  "@post": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "theme": "Theme",
+  "@theme": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "collection": "Collection",
+  "@collection": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "follow": "Follow",
+  "@follow": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "recentBrowsing": "Recent Browsing",
+  "@recentBrowsing": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
   "languageSetting": "Setting Language",
   "@languageSetting": {
     "type": "text",
@@ -26,6 +68,18 @@
   },
   "confirm": "Confirm",
   "@confirm": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "cache": "Cache",
+  "@cache": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "exitLogin": "Exit Login",
+  "@exitLogin": {
     "type": "text",
     "placeholders_order": [],
     "placeholders": {}
